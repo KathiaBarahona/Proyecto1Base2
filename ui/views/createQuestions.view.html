@@ -1,0 +1,17 @@
+<div class="createQuestions-container" ng-controller="createQuestionsCtrl">
+    <div class="quiz-type-wrapper">
+        <p>
+            <input name="quiz-type" class="with-gap" type="radio" id="truefalse" ng-click="onChange(0)" checked="true" />
+            <label for="truefalse">Verdadero y Falso</label>
+        </p>
+        <p>
+            <input name="quiz-type" class="with-gap" type="radio" id="multiple" ng-click="onChange(1)" />
+            <label for="multiple">Respuesta Múltiple</label>
+        </p>
+    </div>
+    <div class="form-wrapper">
+        <trueFalseForm ng-show="type===0"></trueFalseForm>
+        <multipleanswerform ng-show="type===1"></multipleanswerform>
+        <a class="waves-effect waves-light btn-large" ng-click="validateData()">Enviar Pregunta</a>
+    </div>
+</div>

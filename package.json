@@ -1,0 +1,24 @@
+{
+  "name": "quizgenerator",
+  "version": "1.0.0",
+  "description": "App for generating random quizzes",
+  "main": "index.js",
+  "dependencies": {
+    "express-generator": "^4.13.4",
+    "mongoose": "^4.6.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KathiaBarahona/Proyecto1Base2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KathiaBarahona/Proyecto1Base2/issues"
+  },
+  "homepage": "https://github.com/KathiaBarahona/Proyecto1Base2#readme"
+}
