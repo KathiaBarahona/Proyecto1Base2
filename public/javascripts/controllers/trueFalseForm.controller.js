@@ -24,7 +24,8 @@ app.controller("trueFalseFormCtrl", ['$scope', '$http', 'toastr', function($scop
         var questionData = {};
         questionData.question = $(".tf-form-wrapper .question-wrapper textarea").val();
         questionData.type = 0;
-        questionData.answer = $(".tf-form-wrapper select").val();
+        questionData.answers = [$(".tf-form-wrapper select").val()];
+        questionData.correctAnswer = 0;
         return questionData;
     }
     $scope.$on('validateData', $scope.validateQuestionData);

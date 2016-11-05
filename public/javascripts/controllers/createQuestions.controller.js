@@ -10,7 +10,15 @@ app.controller("createQuestionsCtrl", ["$scope", "$http", "toastr", function($sc
         $scope.$broadcast('validateData', $scope.type);
     }
     $scope.sendData = function(event, data) {
-        console.log(data);
+        // $http.get("/").success(function(data) {
+        //     console.log(data)
+        // })
+        $http.post('/createQuestion', data).success(function(data) {
+            console.log(data);
+
+        }).error(function(data) {
+            console.log(data);
+        });
     }
     $scope.$on("sendData", $scope.sendData)
 
